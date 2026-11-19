@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Website architecture
+- Keep repeatable website content in browser-safe typed data modules; shared page components consume it so future CMS content can replace it without rewriting layouts.
+- Use TanStack file routes with shared navigation in the root and a unique metadata helper for every content page; preserve typed navigation and independent detail routes.
+- Keep enquiries integration-ready but explicitly unsent until delivery is connected; never simulate successful delivery or store submitted personal information in browser storage.
